@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+body{
+	background-image: url("front.jpg");
+	background-size: cover;
+	background-position: center center;
+	overflow-x:hidden; 
+	overflow-y:hidden
+}
+h1{
+	color:white;
+	text-align: left;
+	margin-top: 300px;
+	margin-left: 50px;
+}
+h3{
+	color:white;
+	text-align: left;
+	margin-left: 50px
+}
+.button {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 150px 600px;
+    cursor: pointer;
+	border-radius: 4px;
+	-webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.button:hover{
+	background-color: white;
+	color: black;
+}
+</style>
+</head>
+<body>
+
+	<h1>KARAN AGGARWAL</h1>
+	<h3>STUDENT</h3>
+	<a class="button" href="a.html">CONTINUE</a>
+</body>
+</html>
