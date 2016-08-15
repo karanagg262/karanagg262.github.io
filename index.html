@@ -1,50 +1,271 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<style>
-body{
-	background-image: url("front.jpg");
-	background-size: cover;
-	background-position: center center;
-	overflow-x:hidden; 
-	overflow-y:hidden
+<title>KARAN AGGARWAL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
 }
-h1{
-	color:white;
-	text-align: left;
-	margin-top: 300px;
-	margin-left: 50px;
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-h3{
-	color:white;
-	text-align: left;
-	margin-left: 50px
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('front.jpg');
+    min-height: 100%;
 }
-.button {
-    background-color: teal;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 150px 600px;
-    cursor: pointer;
-	border-radius: 4px;
-	-webkit-transition-duration: 1s;
-    transition-duration: 1s;
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("portfolio.jpg");
+    min-height: 400px;
 }
-.button:hover{
-	background-color: white;
-	color: black;
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("contact.jpg");
+    min-height: 400px;
 }
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+}
+
+/*display values*/
+.w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+/*@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}*/
 </style>
-</head>
 <body>
 
-	<h1>KARAN AGGARWAL</h1>
-	<h3>STUDENT</h3>
-	<a class="button" href="karan.html">CONTINUE</a>
+<!-- First Parallax Image with Namee -->
+<div class="bgimg-1 w3-display-container w3-myfont w3-text-white w3-center">
+  <div class="w3-display-middle" >
+    <p class="w3-jumbo"> KARAN AGGARWAL</p>
+    <p class="w3-xxxlarge"> STUDENT </p>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center w3-indigo">ABOUT ME</h3>
+  <p class="w3-center"><em>We turn coffee into code.</em></p>
+  <p>Hi there!!</p>
+  <p>Welcome to my website.I am Karan Aggarwal a passionate programmer. Hard-working, positive attitude, self-motivated individual with a quest of Professionalism to ensure quality in undertaken tasks with great time Management.  Good Communication and Leadership Skills and always willing to interact with new people. Excellent Interpersonal Skills: willing to help, listen and learn   
+ </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-section">
+      <!--profile to be 235*235-->
+      <img src="profile.jpg" class="w3-circle" alt="Photo of Me">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-section">
+      <p>I am pursuing my Btech from Bharati Vidyapeeth's College Of Engineering, IPU, Delhi major in Electronics and Communication.</p>
+      <p>Trekking, football, are some of my other interests.</p>
+      <p>Need a lot of Editing</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">MY TECHNICAL SKILLS</h3><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="1.jpg" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="2.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="3.jpg" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="4.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="5.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="6.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="7.jpg" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="8.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">MY WORK</h3>
+  <!--projects from github-->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <a href="https://goo.gl/3hliuN">
+        <img src="calculator.png" style="width:100%" class="w3-hover-opacity">
+       <h3>ANDROID</h3></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://goo.gl/lPqVGM">
+        <img src="groceryshop.jpg" style="width:100%" class="w3-hover-opacity">
+      <h3>ANDROID</h3></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://goo.gl/hzz5Qp">
+        <img src="bank.jpg" style="width:100%" class="w3-hover-opacity">
+      <h3>JAVA</h3></a>
+    </div>
+  </div>
+
+</div>
+  <!--https://github.com/karanagg262/grocery-android.git-->
+</div>
+
+<!-- Modal for full size images on click
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>-->
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">CONTACT DETAILS</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Delhi, India<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +91 9654549054<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: karanagg3355@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of coffee, or leave me a note:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <button class="w3-btn w3-section w3-right">SEND</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-dark-grey ">
+  <h4>Social Connections : </h4>
+  <a class="w3-btn-floating w3-teal" href="https://goo.gl/Ejfsh5" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="karanagg3355@gmail.com"><i class="fa fa-envelope"></i></a>
+  <a class="w3-btn-floating w3-teal" href="https://goo.gl/bFCR85" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal w3-hide-small" href="https://goo.gl/Zbfl4N" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBpj0SOMmgqdSOaWICfqSmTJhpQcq4BzKw"></script>
+<script>
+var myCenter = new google.maps.LatLng(28.675920, 77.113177);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+
 </body>
 </html>
